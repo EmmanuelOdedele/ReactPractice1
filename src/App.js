@@ -5,6 +5,9 @@ import UserProfileCard from "./components/UserProfileCard";
 import Countries from "./components/Countries";
 import ListOfCars from "./components/ListOfCars";
 import ListOfUsers from "./components/ListOfUsers";
+import NumberCounter from "./components/NumberCounter";
+import FormOnChange from "./components/FormOnChange";
+
 
 function App() {
   return (
@@ -15,6 +18,8 @@ function App() {
       <Countries />
       <ListOfCars />
       <ListOfUsers />
+      <NumberCounter />
+      <FormOnChange />
     </section>
   );
 }

@@ -1,5 +1,7 @@
 import React from "react";
+import OnClick from "./OnClick";
 import "../assets/styles/avatar.css"
+import "../assets/styles/users.css"
 
 function ListOfUsers() {
   const users = [
@@ -17,10 +19,11 @@ function ListOfUsers() {
 
   const userList = users.map((user) => {
     return (
-      <div>
+      <div className="users">
         <img src={user.avatar} alt="pic" className="card-image" />
         <h3>{user.name}</h3>
         <p>{user.bio}</p>
+        <OnClick />
       </div>
     );
   });
