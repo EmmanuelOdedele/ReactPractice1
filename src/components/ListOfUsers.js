@@ -1,0 +1,31 @@
+import React from "react";
+import "../assets/styles/avatar.css"
+
+function ListOfUsers() {
+  const users = [
+    {
+      name: "Emmanuel Odedele",
+      bio: "I am a web developer",
+      avatar: "https://www.w3schools.com/howto/img_avatar.png",
+    },
+    {
+      name: "Stephen Olorunsesan",
+      bio: "Agba Corel (Pablo Richie)",
+      avatar: "https://www.w3schools.com/howto/img_avatar.png",
+    },
+  ];
+
+  const userList = users.map((user) => {
+    return (
+      <div>
+        <img src={user.avatar} alt="pic" className="card-image" />
+        <h3>{user.name}</h3>
+        <p>{user.bio}</p>
+      </div>
+    );
+  });
+
+  return <div>{userList}</div>;
+}
+
+export default ListOfUsers;

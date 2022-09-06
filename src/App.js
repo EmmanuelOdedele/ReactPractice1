@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Hello from "./components/Hello";
+import Greetings from "./components/Greetings";
+import UserProfileCard from "./components/UserProfileCard";
+import Countries from "./components/Countries";
+import ListOfCars from "./components/ListOfCars";
+import ListOfUsers from "./components/ListOfUsers";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="main-page">
+      <Hello />
+      <Greetings />
+      <UserProfileCard />
+      <Countries />
+      <ListOfCars />
+      <ListOfUsers />
+    </section>
   );
 }
+
+// example for arrow function. Thesame as the one just above
+// const App = () => {
+//   return (
+//     <div>
+//       <h1 className="header">Hello World!</h1>
+//       <p className="paragraph">I am Emmanuel Odedele.</p>
+//     </div>
+//   );
+// };
 
 export default App;
