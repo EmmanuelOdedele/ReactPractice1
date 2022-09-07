@@ -6,8 +6,16 @@ import Countries from "./components/Countries";
 import ListOfCars from "./components/ListOfCars";
 import ListOfUsers from "./components/ListOfUsers";
 import NumberCounter from "./components/NumberCounter";
-import FormOnChange from "./components/FormOnChange";
+import FormOnChangeAndSubmit from "./components/FormOnChangeAndSubmit";
 
+function Car({ data }) {
+  const { brand, color, year } = data;
+  return (
+    <section className="car-container">
+      <div className="car-brand">{`${year} ${color} ${brand}`}</div>
+    </section>
+  );
+}
 
 function App() {
   return (
@@ -19,7 +27,14 @@ function App() {
       <ListOfCars />
       <ListOfUsers />
       <NumberCounter />
-      <FormOnChange />
+      <FormOnChangeAndSubmit />
+      <Car
+        data={{
+          brand: "Tesla",
+          color: "Grey",
+          year: "2022",
+        }}
+      />
     </section>
   );
 }

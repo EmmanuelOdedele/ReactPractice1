@@ -36,17 +36,23 @@
   cursor: pointer;
 }
 
+.action-btn:hover {
+    background-color: #45a049;
+    font-weight: 600;
+  }
+
 .reset-btn {
     border-radius: 10px;
     border: none;
     background-color: rgb(75, 74, 74);
     color: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-size: 12px;
     margin-top: 10px;
 }
 
-.action-btn:hover {
-  background-color: #45a049;
-  font-weight: 600;
+.reset-btn:hover {
+    background-color: rgb(54, 54, 54);
 }
+
+
