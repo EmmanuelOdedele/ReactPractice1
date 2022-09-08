@@ -39,10 +39,9 @@ code {
   font-weight: bold;
 }
 
-.car-container {
-  padding: 25px;
-  background-color: blanchedalmond;
-}
+/* .car-container {
+  background-color: black;
+} */
 
 .car-brand {
   background-color: #45a049;
@@ -51,4 +50,11 @@ code {
   max-width: 150px;
   padding: 10px;
   border-radius: 10px;
+  margin: 10px;
+}
+
+.cars {
+  padding: 50px;
+  background-color: blanchedalmond;
+  
 }

@@ -1,0 +1,60 @@
+.useeffect-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: blanchedalmond;
+    padding: 70px 0;
+  }
+  
+  .effect-counter-label {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 5px 30px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+  
+  }
+  
+  .effect-btn {
+    background-color: #4caf50;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px;
+    cursor: pointer;
+  }
+  
+  .effect-btn:hover {
+      background-color: #45a049;
+      font-weight: 600;
+    }
+  
+  /* .reset-btn {
+      border-radius: 10px;
+      border: none;
+      background-color: rgb(75, 74, 74);
+      color: white;
+      padding: 5px 10px;
+      font-size: 12px;
+      margin-top: 10px;
+  }
+  
+  .reset-btn:hover {
+      background-color: rgb(54, 54, 54);
+  } */
+  
+  
+  

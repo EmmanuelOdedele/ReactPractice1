@@ -7,17 +7,40 @@ import ListOfCars from "./components/ListOfCars";
 import ListOfUsers from "./components/ListOfUsers";
 import NumberCounter from "./components/NumberCounter";
 import FormOnChangeAndSubmit from "./components/FormOnChangeAndSubmit";
+import UseEffect from "./components/UseEffect";
 
 function Car({ data }) {
-  const { brand, color, year } = data;
   return (
     <section className="car-container">
-      <div className="car-brand">{`${year} ${color} ${brand}`}</div>
+      <div className="car-brand">{`${data.color} ${data.year} ${data.brand}`}</div>
     </section>
   );
 }
 
 function App() {
+  //array
+  const cars = [
+    {
+      brand: "Tesla",
+      color: "grey",
+      year: "2022",
+    },
+    {
+      brand: "Audi",
+      color: "blue",
+      year: "2020",
+    },
+    {
+      brand: "BMW",
+      color: "black",
+      year: "2021",
+    },
+  ];
+
+  const listOfCars = cars.map((car) => {
+    return <Car data={car} />;
+  });
+
   return (
     <section className="main-page">
       <Hello />
@@ -28,13 +51,8 @@ function App() {
       <ListOfUsers />
       <NumberCounter />
       <FormOnChangeAndSubmit />
-      <Car
-        data={{
-          brand: "Tesla",
-          color: "Grey",
-          year: "2022",
-        }}
-      />
+      <div className="cars">{listOfCars}</div>
+      <UseEffect />
     </section>
   );
 }
