@@ -16,12 +16,14 @@ code {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 10px;
   background-color: beige;
 }
-
-/* .header {
-  font-size: 100px;
+/* 
+.header {
+  font-size: 50px;
   color: green;
+  margin-bottom: 0;
 } */
 
 /* .paragraph {
