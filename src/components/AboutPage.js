@@ -7,9 +7,9 @@ function AboutPage() {
   const navigate = useNavigate();
   // Handle navigation
   const handleNavigate = (event) => {
-    event.preventDefault()
-    navigate("/")
-  }
+    event.preventDefault();
+    navigate("/");
+  };
 
   return (
     <section className="main-page">

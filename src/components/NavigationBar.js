@@ -24,6 +24,15 @@ function NavigationBar() {
       >
         About
       </NavLink>
+      <NavLink
+        style={({ isActive }) =>
+          isActive ? { color: "white" } : { color: "black" }
+        }
+        to="/pagination"
+        className="navbar"
+      >
+        Pagination
+      </NavLink>
     </section>
   );
 }
