@@ -1,0 +1,53 @@
+const useGetData = (type) => {
+  // Set up our state...
+  const [data, setData] = useState([]);
+
+  // useEffect hook here...
+  useEffect(() => {
+    // lists..
+    const cars = [
+      {
+        id: 1,
+        name: "Tesla",
+        year: "2020",
+      },
+      {
+        id: 2,
+        name: "Tesla",
+        year: "2020",
+      },
+      {
+        id: 3,
+        name: "Tesla",
+        year: "2020",
+      },
+    ];
+
+    const books = [
+      {
+        id: 1,
+        name: "Harry Potter",
+      },
+      {
+        id: 2,
+        name: "Lord of the rings",
+      },
+    ];
+
+    // Do magic..
+    if (type === "cars") {
+      setData(cars);
+    } else if (type === "books") {
+      setData(books);
+    } else {
+      setData([]);
+    }
+  }, [type]);
+
+  return [data];
+};
+
+function App() {
+  // Get data from our custom hook
+  const [data] = useGetData("books");
+  console.log(data);

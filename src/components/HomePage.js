@@ -1,4 +1,6 @@
 import React from "react";
+// import { useSearchParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import NavigationBar from "./NavigationBar";
 import Hello from "./Hello";
 import Greetings from "./Greetings";
@@ -14,11 +16,25 @@ import AuthProvider from "./AuthProvider";
 import UserProfile from "./UserProfile";
 
 function HomePage() {
+  // // useSearchParams
+  // const [searchParams, setSearchParams] = useSearchParams();
+  // // Get the searcg params and set the search params...
+  // useEffect(() => {
+  //   // Set the search params...
+  //   setSearchParams({
+  //     id: "123456",
+  //   });
+  //   // Get the search params
+  //   console.log(searchParams.get("id"));
+  // });
+
+  const location = useLocation();
+  console.log(location);
+
   return (
     <section className="main-page">
       <NavigationBar />
       <Hello />
-      
       <Greetings />
       <UserProfileCard />
       <Countries />

@@ -8,7 +8,7 @@ function App() {
   return (
     <section className="main-page">
       <Routes>
-        <Route path="/" element={<HomePage/>} />
+        <Route path="/" element={<HomePage/>}/>
         <Route path="/about" element={<AboutPage />} />
       </Routes>
     </section>

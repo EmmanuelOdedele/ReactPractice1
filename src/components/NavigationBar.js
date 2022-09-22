@@ -10,6 +10,7 @@ function NavigationBar() {
           isActive ? { color: "white" } : { color: "black" }
         }
         to="/"
+        end
         className="navbar"
       >
         Home
