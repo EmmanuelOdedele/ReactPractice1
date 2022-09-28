@@ -13,6 +13,15 @@ function NavigationBar() {
         end
         className="navbar"
       >
+        Sign In
+      </NavLink>
+      <NavLink
+        style={({ isActive }) =>
+          isActive ? { color: "white" } : { color: "black" }
+        }
+        to="/homepage"
+        className="navbar"
+      >
         Home
       </NavLink>
       <NavLink
