@@ -71,7 +71,7 @@ function SignInPage() {
           <div>
             <div>
               <h2>Welcome. You are signed in.</h2>
-              <AvatarMe image={user.photoURL} />
+              <AvatarMe image= {user.photoURL} />
               <div>{user.displayName}</div>
               <div>{user.email}</div>
               <NavigationBar />
